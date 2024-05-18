@@ -1,7 +1,45 @@
-# Modelo de predicción del abecedario sordomudo por medio de imagenes
-Se encontra toda la programacion para programar su propio modelo para clasificacion, entrenarla y ejecutarla en tiempo real.
+# Predicción del Abecedario Sordomudo mediante Imágenes
 
-### Explicacion:
-- En el archivo Manos.py encontraras la programacion en lenguaje Python con la que podras crear tu propio Dataset de imagenes.
-- Para ejecutar este codigo es necesario que instales todos los requerimentos en tu computadora asi que te recomiendo crear un entorno virtual.
-- Una vez entrenes tu red neuronal, puedes ejecutar el codigo que se encuentra en el archivo Prediccion.py donde podras ejecutar tu modelo en tiempo real.
+Este proyecto utiliza aprendizaje automático para crear un modelo capaz de reconocer el abecedario en lengua de señas utilizando imágenes de las manos. Incluye todo el código necesario para crear el dataset, entrenar el modelo y realizar predicciones en tiempo real.
+
+## Contenido
+
+- `Manos.py`: Script para la creación del dataset de imágenes.
+- `Entrenamiento.py`: Script para entrenar la red neuronal.
+- `Prediccion.py`: Script para ejecutar el modelo en tiempo real.
+
+## Requisitos
+
+Asegúrate de tener instaladas las siguientes dependencias antes de ejecutar el proyecto. Se recomienda usar un entorno virtual para gestionar las dependencias.
+
+- Python 3.x
+- OpenCV
+- TensorFlow
+- NumPy
+
+## Instalación
+
+1. Clona este repositorio:
+    ```sh
+    git clone https://github.com/tuusuario/abecedario-sordomudo.git
+    ```
+2. Navega al directorio del proyecto:
+    ```sh
+    cd abecedario-sordomudo
+    ```
+3. Crea un entorno virtual (opcional pero recomendado):
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
+    ```
+4. Instala las dependencias:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Creación del Dataset
+
+Para crear tu propio dataset de imágenes, ejecuta el script `Manos.py`. Este script capturará imágenes de tus manos haciendo diferentes señales del abecedario y las guardará en la carpeta especificada.
+
+```sh
+python Manos.py
